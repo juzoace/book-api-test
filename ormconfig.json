@@ -1,0 +1,10 @@
+{
+    "type": "sqlite",
+    "database": "./data/mydatabase.sqlite", 
+    "synchronize": true, 
+    "logging": true, 
+    "entities": ["src/**/*.entity.ts"], // Replace with your entity file paths
+    "cli": {
+      "entitiesDir": "src/entities" // Replace with your entity directory
+    }
+  }

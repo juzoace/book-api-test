@@ -1,0 +1,23 @@
+# book.dto.graphql
+
+type Book {
+  id: ID!
+  name: String!
+  description: String!
+}
+
+input BookInput {
+  name: String!
+  description: String!
+}
+
+type Query {
+  getBook(id: ID!): Book
+  getAllBooks: [Book]
+}
+
+type Mutation {
+  createBook(input: BookInput!): Book
+updateBook(id: ID!, input: BookInput!): Book
+  deleteBook(id: ID!): Boolean
+}
