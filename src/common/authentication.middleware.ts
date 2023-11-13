@@ -8,7 +8,7 @@ export class AuthenticationMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next) {
     // Use the auth middleware to handle authentication and authorization
     auth({
-      audience: 'https://juzoace.booky-nest-apiAuth0.repl.co/graphql',
+      audience: 'https://book-api-auth0-e4ad716ccb6a.herokuapp.com//graphql',
       issuerBaseURL: 'https://dev-st4zy53myhpbn3os.us.auth0.com',
       // algorithms: ["RS256"],
     })(req, res, (err) => {
