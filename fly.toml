@@ -1,0 +1,18 @@
+# fly.toml
+
+app = "book-api"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[[services]]
+  internal_port = 5000
+  protocol = "http"
+  command = "npm start"
+
+  [services.concurrency]
+  hard_limit = 25
+  soft_limit = 20
+
+[[deployments]]
+to = "fly-production"
