@@ -16,9 +16,9 @@ export class AuthenticationMiddleware implements NestMiddleware {
     auth({
         authRequired: true,
         issuerBaseURL: `https://dev-st4zy53myhpbn3os.us.auth0.com`,
-        baseURL: `https://book-api-auth0-e4ad716ccb6a.herokuapp.com`,
-        clientID: `WQT5E0yE5LfqoZaHuJRYnojpJ8zy9GXb`,
-        secret: `N8deeMmR7Bc9_EMtZtStNAY-BvCI38FJWMSpK8Hw_UtWg4vFCwbdRbGIxRj2lwO7`,
+        baseURL: `https://book-app-frontend-prod-2.vercel.app`,
+        clientID: `jv4vyLvq9sNnHSlv7PlPnZhKmod05Q8R`,
+        secret: `nQi73YCYDFpA5wt3uedYcBHXMmZnHdH14AcXhtjwIRhtfCBC7TFonI0dt6_9kVY8`,
         idpLogout: true,
       })
 
