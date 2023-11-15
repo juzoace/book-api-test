@@ -23,6 +23,7 @@ export class AuthenticationMiddleware implements NestMiddleware {
         console.log(err)
         res.status(401).json({ message: 'Invalid token' }); // Send 401 Unauthorized response
       } else {
+        console.log("No error in  authentication");
         next();
       }
     });
