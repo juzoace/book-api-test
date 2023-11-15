@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response } from 'express';
-// import { auth } from 'express-oauth2-jwt-bearer';
 import { auth } from 'express-openid-connect';
 
 

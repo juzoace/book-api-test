@@ -8,6 +8,7 @@ export class BookService {
 
   // Create a new book  -- done
   create(bookInput: BookInput): Book {
+    console.log(bookInput);
     const newBook = { id: `${this.books.length + 1}`, ...bookInput };
     this.books.push(newBook);
     return newBook;
