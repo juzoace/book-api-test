@@ -9,10 +9,7 @@ import { auth } from 'express-openid-connect';
 export class AuthenticationMiddleware implements NestMiddleware {
   use(req: Request, res: Response, next) {
     console.log("here in auth middleware")
-    // console.log(`${process.env.SECRET}`)
-    // console.log(process.env.CLIENTID)
-    // console.log(process.env.BASEURL)
-    // console.log(process.env.iSSUERBASEURL)
+  
     auth({
         authRequired: true,
         issuerBaseURL: `https://dev-st4zy53myhpbn3os.us.auth0.com`,
